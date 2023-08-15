@@ -554,6 +554,14 @@ h5 {
     margin-top: 18px;
 }
 
+.form_tab_panel .form_typo a {
+    text-decoration: underline;
+    color: #26AD60;
+}
+.form_tab_panel .form_typo a:hover {
+    color: #6551E0;
+}
+
 .about_form_section h2 {
     color: #1D352D;
     margin-bottom: 30px;
