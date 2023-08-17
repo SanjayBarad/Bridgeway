@@ -90,6 +90,7 @@ h2 {
     font-size: 48px;
     color: #29263C;
     font-weight: 900;
+    line-height: 1.4;
 }
 
 h2 span.blue {
@@ -116,7 +117,7 @@ h5 {
 }
 
 .container {
-    max-width: calc(1440px + 30px);
+    max-width: calc(1448px + 30px);
     padding: 0 20px;
 }
 
@@ -151,7 +152,7 @@ h5 {
 }
 
 .site_header .nav-item:not(:first-child) {
-    margin-left: 42px;
+    margin-left: 45px;
 }
 
 .site_header .navbar-expand-lg .navbar-nav .nav-link {
@@ -170,7 +171,7 @@ h5 {
 .site_header .nav-item.bttn .nav-link {
     background-color: var(--theme-color);
     color: #FFFFFF;
-    padding: 16px 29px;
+    padding: 18px 31px;
     line-height: 1;
     border-radius: 10px;
     text-align: center;
@@ -271,36 +272,45 @@ h5 {
 
 
 /* ABOUT SECTION */
-.about_sub_section {
+.about_section {
     position: relative;
 }
 
-.about_sub_section:before {
+.about_section:before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 111%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    display: table;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
     height: 100%;
     background-image: url('../images/about_bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: -1;
 }
-
+.about_sub_section{
+    position: relative;
+    z-index: 1;
+}
 .about_solution_section {
     width: 100%;
-    padding: 117px 0 226px;
+    max-width: 1300px;
+    padding: 95px 0 195px;
+    margin: auto;
 }
 
 .about_solution_section h2 {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     color: #1C2522;
 }
 
 .about_solution_section p {
-    margin-bottom: 36px;
+    margin-bottom: 41px;
 }
 
 .about_solution_section a {
@@ -326,17 +336,19 @@ h5 {
 .about_solution_section a:focus {
     background-color: #6551E0;
 }
-
+.about_solution_section .img_block{
+    padding: 7px 26px 0 0;
+}
 .about_solution_section .imgs_col {
     position: relative;
 }
 .about_solution_section .imgs_col:after {
     content: '';
     position: absolute;
-    top: 90px;
-    left: -340px;
+    top: 66px;
+    left: -264px;
     right: 0;
-    bottom: -16px;
+    bottom: -25px;
     background-image: url('../images/line_shape.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -348,15 +360,15 @@ h5 {
     z-index: 1;
     width: 82%;
     max-width: 578px;
+    margin: auto;
 }
 
 .about_solution_section img.pattern_img {
     position: absolute;
-    top: 41px;
-    left: 50%;
+    top: 62px;
+    right: 42px;
     width: 70%;
     max-width: 512px;
-    transform: translate(-50%, 0);
 }
 
 .about_form_section {
@@ -390,7 +402,7 @@ h5 {
     border-radius: 20px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 50px 10px #00000014;
-    padding: 36px;
+    padding: 20px 36px 40px;
 }
 
 .form_tab_indicator {
@@ -472,7 +484,7 @@ h5 {
     color: #000000;
     width: 100%;
     max-width: 278px;
-    margin: 15px 0 30px;
+    margin: 0 0 30px;
 }
 
 .form_tab_panel .form_group {
@@ -482,7 +494,7 @@ h5 {
 
 .form_tab_panel .form_group label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #1D352D;
     display: flex;
     align-items: center;
@@ -527,6 +539,7 @@ h5 {
 
 /* Firefox */
 .form_tab_panel .form_group input[type=number] {
+    appearance: none;
     -moz-appearance: textfield;
 }
 
@@ -542,7 +555,7 @@ h5 {
     border: none;
     border-radius: 8px;
     transition: all 0.3s ease;
-    margin-top: 24px;
+    margin-top: 30px;
 }
 
 .form_tab_panel .form_submit input:hover,
@@ -570,19 +583,31 @@ h5 {
 .about_form_section p {
     color: #424B48;
 }
-
-.solar_sub_section {
+.form_txt_block{
+    padding: 0 33px;
+}
+.form_txt_block h2{
+    text-transform: capitalize;
+    letter-spacing: -0.5px;
+}
+.form_txt_block p{
+    line-height: 1.5;
+}
+.solar_section {
     position: relative;
 }
 
-.solar_sub_section:before {
+.solar_section:before {
     content: '';
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 111%;
-    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    width: 100%;
+    max-width: 1600px;
+    height: 89%;
+    display: table;
+    margin: auto;
     background-image: url('../images/solar_bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -592,13 +617,17 @@ h5 {
 .solar_whychose_section {
     position: relative;
     width: 100%;
-    padding: 60px 0;
+    padding: 85px 0;
     z-index: 1;
 }
 
 .solar_whychose_section .head {
     text-align: center;
-    margin-bottom: 106px;
+    margin-bottom: 58px;
+}
+.solar_whychose_section .head h2 {
+    font-weight: 800;
+    text-transform: capitalize;
 }
 .solar_whychose_text_col{
     margin: auto;
@@ -607,17 +636,28 @@ h5 {
     width: 100%;
     max-width: 585px;
     margin-bottom: 30px;
+    line-height: 1.3;
 }
-
+.solar_whychose_text_col p{
+    width: 100%;
+    max-width: 555px;
+}
 .solar_whychose_img_col {
     position: relative;
     margin: auto;
 }
-
+.solar_whychose_img_block{
+    padding-top: 12px;
+}
+.solar_whychose_img_col img{
+    width: 100%;
+    max-width: 775px;
+    margin-left: auto;
+}
 .solar_whychose_img_col .yearly_bill_txt {
     position: absolute;
-    top: -29px;
-    right: 60px;
+    top: 12px;
+    right: 83px;
     background-color: #EAEFFF;
     box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
     padding: 43px 30px;
@@ -634,7 +674,7 @@ h5 {
 .solar_bridge_section {
     position: relative;
     width: 100%;
-    padding: 60px 0;
+    padding: 18px 0;
     background-image: url('../images/solar_bridge_bgline.png');
     background-size: 80%;
     background-position: center 85%;
@@ -644,7 +684,7 @@ h5 {
 
 .solar_bridge_section .head {
     width: 100%;
-    margin-bottom: 72px;
+    margin-bottom: 58px;
     text-align: center;
 }
 
@@ -655,8 +695,9 @@ h5 {
 
 .solar_bridge_section .head p {
     width: 100%;
-    max-width: 576px;
+    max-width: 555px;
     margin: auto;
+    line-height: 1.6;
 }
 
 .solar_bridge_section .row {
@@ -669,6 +710,7 @@ h5 {
 
 .solar_bridge_bx {
     width: 100%;
+    height: 100%;
     background-color: #FFFFFF;
     text-align: center;
     padding: 36px;
@@ -703,17 +745,17 @@ h5 {
 .solar_power_section {
     position: relative;
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 0 0;
     z-index: 1;
 }
-.solar_power_cont_col,
-.solar_power_list_col{
-    margin: auto;
+.solar_power_cont_col, .solar_power_list_col{
+    margin: 0 auto;
 }
 .solar_power_section h2 {
     width: 100%;
     max-width: 568px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    text-transform: capitalize;
 }
 
 .solar_power_section p {
@@ -731,7 +773,12 @@ h5 {
 .solar_power_section .imgs .img2 {
     margin-left: -20px;
 }
-
+.solar_power_listing{
+    width: 100%;
+    max-width: 585px;
+    margin: auto;
+    padding-top: 16px;
+}
 .solar_power_listing ul {
     position: relative;
 }
@@ -787,10 +834,10 @@ h5 {
     width: 100%;
     max-width: 457px;
 }
-.customer_journy_sub{
+.customer_journy{
     position: relative;
 }
-.customer_journy_sub:before {
+.customer_journy:before {
     content: '';
     position: absolute;
     top: 0;
@@ -798,17 +845,24 @@ h5 {
     right: 0;
     bottom: 0;
     width: 100%;
+    max-width: 1378px;
     height: 100%;
+    display: table;
+    margin: auto;
     background-image: url('../images/customer_journy_bg.png');
     background-repeat: no-repeat;
     background-size: 80% 100%;
     background-position: bottom;
     z-index: -1;
 }
+.customer_journy_sub{
+    position: relative;
+    z-index: 1;
+}
 
 .customer_section {
     position: relative;
-    padding: 60px 0;
+    padding: 100px 0 76px;
     width: 100%;
     max-width: 1298px;
     margin: auto;
@@ -823,7 +877,7 @@ h5 {
 .customer_section .map {
     width: 100%;
     height: 0;
-    padding-top: 46.6%;
+    padding-top: 45.8%;
     position: relative;
     border: 5px solid #FFFFFF;
     box-shadow: 0 18px 40px rgba(155, 174, 167, 0.6);
@@ -844,7 +898,7 @@ h5 {
 .map_identity_bx {
     background-color: #FFFFFF;
     position: absolute;
-    right: 108px;
+    right: 103px;
     bottom: 51px;
     width: 100%;
     max-width: 370px;
@@ -857,7 +911,7 @@ h5 {
     height: 0;
     padding-top: 62%;
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .map_identity_bx .img img {
@@ -878,6 +932,9 @@ h5 {
     margin-bottom: 18px;
 }
 
+.map_identity_bx p {
+    line-height: 1.65;
+}
 .map_identity_bx .rating {
     color: #25C78C;
 }
@@ -889,9 +946,9 @@ h5 {
 .journy_section {
     position: relative;
     width: 100%;
-    max-width: 1240px;
+    max-width: 1164px;
     margin: auto;
-    padding: 60px 0;
+    padding: 0;
     z-index: 1;
 }
 
@@ -921,7 +978,9 @@ h5 {
     padding-left: 24px;
     padding-right: 24px;
 }
-
+.journey_service_col .row{
+    padding-top: 10px;
+}
 .journey_service_col .row {
     margin-left: -24px;
     margin-right: -24px;
@@ -988,7 +1047,7 @@ h5 {
 }
 
 .faq_section {
-    padding: 60px 0 90px;
+    padding: 77px 0 70px;
 }
 
 .faq_sub_section {
@@ -999,7 +1058,7 @@ h5 {
 
 .faq_section .head {
     text-align: center;
-    margin-bottom: 47px;
+    margin-bottom: 42px;
 }
 
 .faq_section .accordion-item {
@@ -1014,7 +1073,7 @@ h5 {
 }
 
 .faq_section .accordion-item .accordion-button {
-    padding: 25px 0 30px;
+    padding: 24px 0;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.5;
@@ -1044,7 +1103,7 @@ h5 {
 }
 
 .faq_section .accordion-item .accordion-body {
-    padding: 0 0 30px;
+    padding: 0 0 15px;
 }
 
 .faq_section .accordion-item .accordion-body p {
@@ -1058,7 +1117,7 @@ h5 {
 
 .footer_about img.logo {
     height: 69px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .footer_about p {
@@ -1081,6 +1140,9 @@ h5 {
     margin-left: 14px;
 }
 
+.footer_links{
+    padding: 20px 0 0 70px;
+}
 .footer_links h4 {
     color: #424B48;
     font-weight: 500;
@@ -1112,7 +1174,6 @@ h5 {
 .footer_bottombar {
     margin-top: 65px;
     border-top: 1px solid #9A9F9E;
-    padding: 18px 0;
 }
 
 .footer_bottom_links ul {
@@ -1228,7 +1289,7 @@ h5 {
         box-shadow: none;
     }
     .about_solution_section{
-        padding: 30px 0 130px;
+        padding: 30px 0 180px;
         text-align: center;
     }
     .about_solution_section img.pattern_img{
@@ -1261,6 +1322,9 @@ h5 {
     .solar_whychose_text_col h2{
         max-width: none;
         text-align: center;
+    }
+    .solar_whychose_text_col p{
+        margin: auto;
     }
     .solar_whychose_section,
     .solar_bridge_section,
@@ -1312,6 +1376,9 @@ h5 {
     }
     .site_footer {
         padding: 50px 0 30px;
+    }
+    .footer_links{
+        padding: 0;
     }
     .footer_links h4{
         margin-bottom: 20px;
