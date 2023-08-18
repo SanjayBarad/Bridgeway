@@ -1,0 +1,288 @@
+
+@media (max-width: 1366px) {
+    .solar_power_section .imgs{
+        flex-wrap: wrap;
+    }
+    .solar_power_section .imgs img{
+        padding: 5px;
+    }
+    .solar_power_section .imgs .img2{
+        margin-left: 0;
+    }
+}
+@media (max-width: 1199px) {
+    .site_header .nav-item:not(:first-child) {
+        margin-left: 30px;
+    }
+    .map_identity_bx{
+        padding: 10px;
+        max-width: 280px;
+    }
+    .map_identity_bx{
+        right: 40px;
+        bottom: 10px;
+    }
+    .map_identity_bx .img,
+    .map_identity_bx .head{
+        margin-bottom: 10px;
+    }
+    .map_identity_bx .head h5{
+        font-size: 16px;
+    }
+    .map_identity_bx .rating{
+        font-size: 14px;
+    }
+    .map_identity_bx p{
+        font-size: 14px;
+    }
+    .journey_service_bx{
+        padding: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .site_header .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 280px;
+        height: 100%;
+        background-color: #FFF;
+        padding-top: 94px;
+        box-shadow: 10px 0px 50px 10px #00000014;
+        transition: all 0.3s ease;
+        transition-delay: 0s;
+        transform: none;
+    }
+    .site_header .navbar-collapse.collapse:not(.show){
+        display: block;
+        transform: translate(100%, 0);
+    }
+    .site_header .nav-item{
+        display: block;
+        width: 100%;
+        padding: 15px 30px;
+    }
+    .site_header .nav-item:not(:first-child){
+        margin: 0;
+    }
+    .site_header .navbar-nav .dropdown-menu{
+        box-shadow: none;
+    }
+    .about_solution_section{
+        padding: 30px 0 180px;
+        text-align: center;
+    }
+    .about_solution_section img.pattern_img{
+        left: auto;
+        right: 15px;
+        transform: none;
+    }
+    .about_form_section{
+        padding: 60px 0;
+    }
+    .about_form_section:before{
+        width: 90%;
+        height: 60%;
+        left: 5%;
+    }
+    .about_form_section .form_txt_col{
+        margin-bottom: 30px;
+    }
+    .about_form_section h2,
+    .about_form_section p{
+        text-align: center;
+    }
+    .form_tabs{
+        margin: auto;
+    }
+    .solar_whychose_text_col{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .solar_whychose_text_col h2{
+        max-width: none;
+        text-align: center;
+    }
+    .solar_whychose_text_col p{
+        margin: auto;
+    }
+    .solar_whychose_section,
+    .solar_bridge_section,
+    .solar_power_section{
+        padding: 30px 0;
+    }
+    .solar_whychose_section .head{
+        margin-bottom: 80px;
+    }
+    .solar_bridge_section .head{
+        margin-bottom: 30px;
+    }
+    .solar_power_section{
+        padding: 30px 0;
+    }
+    .customer_section > .head{
+        margin-bottom: 50px;
+    }
+    .customer_section .map{
+        padding-top: 50%;
+    }
+    .solar_power_cont_col{
+        margin-bottom: 50px;
+    }
+    .solar_power_cont_col h2{
+        max-width: none;
+        text-align: center;
+    }
+    .solar_power_cont_col p{
+        margin: auto;
+        text-align: center;
+    }
+    .solar_power_section .imgs .img1{
+        width: 40%;
+    } 
+    .solar_power_section .imgs .img2{
+        width: 60%;
+    } 
+    .journey_head_col{
+        text-align: center;
+    }
+    .journey_head_col p{
+        margin: auto auto 30px;
+    }
+    .faq_section .accordion {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+    .site_footer {
+        padding: 50px 0 30px;
+    }
+    .footer_links{
+        padding: 0;
+    }
+    .footer_links h4{
+        margin-bottom: 20px;
+    }
+    .footer_bottombar{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 767px){
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .about_form_section{
+        padding: 30px 0;
+    }
+    .about_solution_section h2,
+    .about_solution_section p,
+    .about_form_section h2{
+        margin-bottom: 15px;
+    }
+    .customer_section{
+        padding: 30px 0;
+    }
+    .journy_section{
+        padding: 30px 0;
+    }
+    .solar_sub_section:before{
+        opacity: 0.5;
+    }
+
+    .solar_whychose_section .head{
+        margin-bottom: 30px;
+    }
+    .solar_whychose_text_col h2,
+    .solar_bridge_section .head h2,
+    .solar_power_section h2{
+        margin-bottom: 15px;
+    }
+    .solar_power_cont_col{
+        margin-bottom: 15px;
+    }
+    .solar_power_section .imgs{
+        margin-top: 15px;
+    }
+    .customer_section .head{
+        margin-bottom: 30px;
+    }
+    .customer_section .map{
+        padding-top: 100%;
+    }
+    .journey_service_bx_col:first-child,
+    .journey_service_bx_col:nth-child(3){
+        transform: none;
+        margin: 0;
+    }
+    .faq_section{
+        padding: 30px 0;
+    }
+    .about_solution_section .imgs_col:after {
+        top: 140px;
+        left: 0;
+        right: 0;
+        width: 82%;
+    }
+    .solar_power_listing li:not(:last-child):before {
+        left: 37px;
+    }
+    .solar_power_listing .icon {
+        width: 76px;
+        height: 76px;
+        margin-right: 15px;
+    }
+    .solar_power_listing .icon svg {
+        width: 36px;
+        height: 36px;
+    }
+    .solar_power_listing ul:before {
+        left: 38px;
+    }
+    .journey_service_bx .icon {
+        width: 80px;
+        height: 80px;
+    }
+    .journey_service_bx h2 {
+        margin: 6px 0 14px;
+    }
+    .solar_power_listing .txt h3 {
+        margin-bottom: 8px;
+    }
+}
+@media (max-width: 575px){
+    .map_identity_bx{
+        display: none;
+    }
+    .footer_about img.logo {
+        height: 40px;
+    }
+    .footer_bottom_links ul {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px 0;
+    }
+    .footer_bottom_links ul li {
+        margin: 0 !important;
+    }
+    footer.site_footer p, footer.site_footer a {
+        font-size: 16px;
+    }
+    .footer_social ul{
+        justify-content: center;
+    }
+    .form_tabs {
+        padding: 20px;
+    }
+    .form_tab_panel .form_group input {
+        padding: 10px 20px;
+    }
+    .form_tab_panel .form_submit input {
+        padding: 10px 15px;
+    }
+}
