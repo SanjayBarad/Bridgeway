@@ -724,13 +724,7 @@ h5 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #6551E01A;
     border-radius: 30px;
-}
-
-.solar_bridge_bx .icon svg {
-    width: 48px;
-    height: 48px;
 }
 
 .solar_bridge_bx h3 {
